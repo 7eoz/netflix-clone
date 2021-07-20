@@ -1,0 +1,60 @@
+:root {
+	--red: #e50914;
+	--black: #141414;
+	--light-gray: #aaa;
+}
+
+/*CSS Base*/
+body {
+	background: var(--black);
+	font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: white;
+}
+
+header .container {
+	border: 1px solid #000;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+header .logo {
+	color: var(--red);
+	font-family: 'Bebas Neue', 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial,
+		sans-serif;
+	font-size: 4rem;
+	font-weight: 700;
+	margin-right: 2rem;
+}
+
+header div a {
+	text-decoration: none;
+	color: white;
+	margin-right: 0.8rem;
+}
+
+header div a:hover {
+	color: var(--light-gray);
+}
+
+/*Banner Principal*/
+.filme-principal {
+	font-size: 1rem;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 100%)
+		url(../img/house_of_cards.jpg);
+	background-size: cover;
+
+	height: 25rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.filme-principal .descricao {
+	margin-bottom: 2.5rem;
+}
+
+.titulo {
+	font-size: 2.5rem;
+}
