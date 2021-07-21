@@ -4,7 +4,7 @@
 	--light-gray: #aaa;
 }
 
-/*CSS Base*/
+/*Base CSS*/
 body {
 	background: var(--black);
 	font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -37,24 +37,55 @@ header div a:hover {
 	color: var(--light-gray);
 }
 
-/*Banner Principal*/
-.filme-principal {
+/*Main Banner*/
+.main-banner {
 	font-size: 1rem;
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), 100%)
-		url(../img/house_of_cards.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+		url('../img/house_of_cards2.jpg');
+
 	background-size: cover;
 
-	height: 25rem;
+	height: 50rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: flex-start;
 }
 
-.filme-principal .descricao {
+.main-banner .description {
+	margin-top: 0.7rem;
 	margin-bottom: 2.5rem;
 }
 
-.titulo {
+.main-banner .title {
+	margin-top: 5%;
 	font-size: 2.5rem;
+}
+
+.button {
+	background-color: rgba(0, 0, 0, 0.5);
+	border: none;
+	color: white;
+	/* display: flex; */
+	/* justify-content: space-between; */
+	padding: 1rem 2rem;
+	margin-right: 1rem;
+	font-size: 0.8rem;
+}
+
+.button:hover {
+	/* transition: 3s ease all; */
+	border: 1px solid #fff;
+	/* background-color: #fff;
+	color: #000; */
+}
+
+.button:active {
+	border: 1px solid #fff;
+	background-color: #fff;
+	color: #000;
+}
+
+button i {
+	margin-right: 0.3rem;
 }
