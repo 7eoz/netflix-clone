@@ -38,6 +38,11 @@ header div a:hover {
 }
 
 /*Main Banner*/
+.container {
+	margin-left: 4%;
+	margin-right: 50%;
+}
+
 .main-banner {
 	font-size: 1rem;
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
@@ -71,6 +76,7 @@ header div a:hover {
 	padding: 1rem 2rem;
 	margin-right: 1rem;
 	font-size: 0.8rem;
+	border-radius: 0.4rem;
 }
 
 .button:hover {
