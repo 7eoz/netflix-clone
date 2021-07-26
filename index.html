@@ -11,8 +11,14 @@
 	<body>
 		<header>
 			<div class="container">
-				<h2 class="logo">NETFLIX</h2>
-				<nav>
+				<a href="#">
+					<img
+						src="./img/netflix-logo.png"
+						alt="Logo Netflix"
+						class="netflix-logo"
+					/>
+				</a>
+				<nav class="top-menu">
 					<a href="#">Begin</a>
 					<a href="#">Series</a>
 					<a href="#">Movies</a>
@@ -45,6 +51,22 @@
 			</div>
 		</main>
 
+		<div class="carousel-title">
+			<h2 class="title-1">Most Watched Movies</h1>
+		</div>
+
+		<div class="carousel">
+			<div class="carouselbox">
+				<!-- Random Data will come here  -->
+			</div>
+
+			<a class="switchLeft sliderButton" onclick="sliderScrollLeft()" />
+			<a class="switchRight sliderButton" onclick="sliderScrollRight()" />
+		</div>
+
+		<!-- Just for showing Dynamic Contents :) -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
 		<script src="https://kit.fontawesome.com/43a34df19f.js"></script>
+		<script src="./js/main.js"></script>
 	</body>
 </html>

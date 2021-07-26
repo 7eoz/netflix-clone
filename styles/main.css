@@ -27,6 +27,15 @@ header .logo {
 	margin-right: 2rem;
 }
 
+header .top-menu {
+	display: flex;
+	flex-direction: row;
+}
+
+header .netflix-logo {
+	height: 3rem;
+}
+
 header div a {
 	text-decoration: none;
 	color: white;
@@ -94,4 +103,70 @@ header div a:hover {
 
 button i {
 	margin-right: 0.3rem;
+}
+
+.carousel-title {
+	padding: 1rem 0 0rem 1rem;
+	font-size: 2rem;
+}
+
+.carousel {
+	height: 15, 625rem;
+	width: 90%;
+	position: relative;
+}
+
+.carousel .switchLeft,
+.carousel .switchRight {
+	display: flex;
+	height: 100%;
+	width: 45px;
+	top: 0;
+	z-index: 3;
+}
+
+.carousel .switchLeft:hover,
+.carousel .switchRight:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.carousel .switchLeft {
+	position: absolute;
+	left: 0px;
+}
+
+.carousel .switchRight {
+	position: absolute;
+
+	right: -10%;
+}
+
+.carouselbox {
+	height: 250px;
+	width: 110%;
+	overflow: hidden;
+	/* white-space: nowrap; */
+	display: flex;
+	padding-bottom: 10px !important;
+	display: flex;
+	align-items: center;
+}
+
+.carouselbox img {
+	min-width: 147px;
+	max-width: 147px;
+	height: 200px;
+	background-size: cover;
+
+	margin: 5px 10px;
+	cursor: pointer;
+	transition: 0.5s ease;
+	z-index: 2;
+
+	/* margin: 15px; */
+}
+
+.carouselbox img:hover {
+	transform: scale(1.4);
+	z-index: 5;
 }
